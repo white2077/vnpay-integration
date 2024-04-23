@@ -1,21 +1,21 @@
 spring:
   application:
-    api-prefix: /api/v1
+    api-prefix: ${API_PREFIX}
     name: spring-boot-rest-api
   jpa:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
 server:
-  port: 8080
+  port: ${API_PORT}
 
 payment:
   vnPay:
-    url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
-    tmnCode: 58X4B4HP
-    secretKey: 6YXQZQJ
-    returnUrl: http://localhost:8080/api/v1/payment/vnpay-return
-    version: 2.1.0
-    command: pay
-    orderType: other
+    url: ${PAY_URL}
+    tmnCode: ${TMN_CODE}
+    secretKey: ${SECRET_KEY}
+    returnUrl: ${RETURN_URL}
+    version: ${VERSION}
+    command: ${COMMAND}
+    orderType: ${ORDER_TYPE}
 
