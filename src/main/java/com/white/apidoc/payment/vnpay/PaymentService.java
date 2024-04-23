@@ -1,17 +1,12 @@
-package com.white.apidoc.payment;
+package com.white.apidoc.payment.vnpay;
 
 import com.white.apidoc.core.config.payment.VNPAYConfig;
 import com.white.apidoc.util.VNPayUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor

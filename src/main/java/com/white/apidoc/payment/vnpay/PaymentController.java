@@ -1,4 +1,4 @@
-package com.white.apidoc.payment;
+package com.white.apidoc.payment.vnpay;
 
 import com.white.apidoc.core.response.ResponseObject;
 import jakarta.servlet.http.HttpServletRequest;

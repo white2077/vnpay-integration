@@ -3,6 +3,7 @@ import com.white.apidoc.util.VNPayUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.crypto.Mac;
@@ -51,5 +52,4 @@ public class VNPAYConfig {
         vnpParamsMap.put("vnp_ExpireDate", vnp_ExpireDate);
         return vnpParamsMap;
     }
-
 }
