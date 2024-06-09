@@ -21,7 +21,7 @@ public class PaymentController {
     public ResponseObject<PaymentDTO.VNPayResponse> payCallbackHandler(HttpServletRequest request) {
         String status = request.getParameter("vnp_ResponseCode");
         if (status.equals("00")) {
-            return new ResponseObject<>(HttpStatus.OK, "Success", new PaymentDTO.VNPayResponse("00", "Success", "https://sextop1.mom/bi-ga-sep-cuong-buc-den-mang-thai-va-gio-day-ga-ta-lai-tim-den/"));
+            return new ResponseObject<>(HttpStatus.OK, "Success", new PaymentDTO.VNPayResponse("00", "Success", ""));
         } else {
             return new ResponseObject<>(HttpStatus.BAD_REQUEST, "Failed", null);
         }
